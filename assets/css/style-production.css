@@ -534,6 +534,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -550,8 +584,28 @@ video {
   top: -0.75rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-0 {
   right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .my-1 {
@@ -561,6 +615,10 @@ video {
 
 .mb-16 {
   margin-bottom: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mr-2 {
@@ -577,6 +635,22 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .line-clamp-1 {
@@ -641,6 +715,10 @@ video {
   height: 800px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-\[300px\] {
   min-height: 300px;
 }
@@ -691,6 +769,14 @@ video {
 
 .w-\[5\%\] {
   width: 5%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-\[450px\] {
+  max-width: 450px;
 }
 
 .grow {
@@ -841,6 +927,11 @@ video {
   background-color: rgb(164 54 240 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -850,12 +941,24 @@ video {
   padding: 0.5rem;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-40 {
+  padding: 10rem;
 }
 
 .px-12 {
@@ -902,6 +1005,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -916,6 +1023,11 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base {
@@ -941,6 +1053,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-medium {
@@ -1003,6 +1119,12 @@ h5,
 h6 {
   font-family: Noto Serif JP, serif;
   font-weight: 600;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 84rem;
 }
 
 .menu-category-active::after {

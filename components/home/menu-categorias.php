@@ -4,6 +4,7 @@
         menuCategoriasNegocios: false,
         menuCategoriasFinanzas: false
     }"
+    class="relative z-20"
 >
     <div class="flex items-center justify-center gap-8 border-t border-gray-300 shadow-lg text-sm">
         <div class="py-4 relative hover:text-udemy hover:cursor-pointer"
