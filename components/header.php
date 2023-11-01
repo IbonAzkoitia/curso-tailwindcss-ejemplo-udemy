@@ -383,6 +383,7 @@
         </div>
     </div>
 
+
     <div x-data="{ menuNotificaciones: false }" class="relative" @click.away="menuNotificaciones = false">
         <svg @mouseover="menuNotificaciones = true" @click="menuNotificaciones = ! menuNotificaciones"
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 hover:text-udemy hover:cursor-pointer">
@@ -479,7 +480,117 @@
         </div>
     </div>
 
-    <div>
-        <img src="/assets/images/ibon-azkoitia.jpg" alt="Usuario" class="h-8 rounded-full border border-gray-300">
+    <div x-data="{ menuUsuario: false }" class="relative" @click.away="menuUsuario = false">
+        <img @mouseover="menuUsuario = true" @click="menuUsuario = ! menuUsuario"
+            src="/assets/images/ibon-azkoitia.jpg" alt="Usuario" class="h-8 rounded-full border border-gray-300"
+        >
+
+        <div x-show="menuUsuario" class="absolute mt-8 right-0 w-[260px] border border-gray-300 divide-y divide-gray-300">
+
+            <div class="p-4 flex items-center gap-2">
+                <img src="/assets/images/ibon-azkoitia.jpg" alt="Usuario" class="h-16 rounded-full border border-gray-300">
+
+                <div>
+                    <div class="text-base font-semibold">Ibon Azkoitia</div>
+                    <div class="text-xs text-gray-500">email@email.com</div>
+                </div>
+            </div>
+
+            <div class="py-2">
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Mi aprendizaje
+                </a>
+
+                <a href="#" class="py-2 px-4 hover:text-udemy flex items-center justify-between">
+                    <div>Mi cesta</div>
+                    <div class="inline-flex items-center justify-center w-6 h-6 bg-udemy-light text-white rounded-full text-xs font-medium">
+                        2
+                    </div>
+                </a>
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Lista de deseos
+                </a>
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Panel del instructor
+                </a>
+            </div>
+
+            <div class="py-2">
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Notificaciones
+                </a>
+
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Mensajes
+                </a>
+            </div>
+
+            <div class="py-2">
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Configuración de cuenta
+                </a>
+
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Métodos de pago
+                </a>
+
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Suscripciones
+                </a>
+
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Créditos de Udemy
+                </a>
+
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Historial de compras
+                </a>
+
+            </div>
+
+            <div>
+                <a href="#" class="p-4 flex items-center justify-between group">
+                    <div class="group-hover:text-udemy">Idioma</div>
+                    <div class="flex items-center gap-1">
+                        Español
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                        </svg>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="py-2">
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Perfil público
+                </a>
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Editar perfil
+                </a>
+            </div>
+
+            <div class="py-2">
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Ayuda
+                </a>
+                <a href="#" class="block py-2 px-4 hover:text-udemy">
+                    Cerrar sesión
+                </a>
+            </div>
+
+            <a href="#" class="p-4 flex justify-between group">
+                <div>
+                    <div class="text-lg font-semibold group-hover:text-udemy">Udemy Business</div>
+                    <div class="text-gray-500">Lleva el aprendizaje a tu empresa</div>
+                </div>
+
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                </div>
+            </a>
+        </div>
     </div>
 </header>
