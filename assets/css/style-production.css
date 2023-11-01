@@ -559,6 +559,10 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -631,6 +635,10 @@ video {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-\[800px\] {
+  height: 800px;
 }
 
 .min-h-\[300px\] {
@@ -721,6 +729,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -735,6 +747,12 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -785,7 +803,17 @@ video {
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(45 46 49 / var(--tw-border-opacity));
+  border-color: rgb(28 29 31 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-\[\#1c1d1f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 29 31 / var(--tw-bg-opacity));
 }
 
 .bg-gray-300 {
@@ -800,7 +828,7 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(45 46 49 / var(--tw-bg-opacity));
+  background-color: rgb(28 29 31 / var(--tw-bg-opacity));
 }
 
 .bg-udemy {
@@ -828,6 +856,11 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-4 {
@@ -860,8 +893,21 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .pt-0 {
@@ -946,7 +992,7 @@ video {
 html {
   font-family: Roboto, sans-serif;
   --tw-text-opacity: 1;
-  color: rgb(45 46 49 / var(--tw-text-opacity));
+  color: rgb(28 29 31 / var(--tw-text-opacity));
 }
 
 h1,
@@ -973,60 +1019,7 @@ h6 {
   border-color: rgb(45 47 49 / var(--tw-border-opacity));
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(45 46 49 / var(--tw-bg-opacity));
-}
-
-.after\:absolute::after {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.after\:-bottom-3::after {
-  content: var(--tw-content);
-  bottom: -0.75rem;
-}
-
-.after\:left-1\/3::after {
-  content: var(--tw-content);
-  left: 33.333333%;
-}
-
-.after\:block::after {
-  content: var(--tw-content);
-  display: block;
-}
-
-.after\:h-4::after {
-  content: var(--tw-content);
-  height: 1rem;
-}
-
-.after\:w-4::after {
-  content: var(--tw-content);
-  width: 1rem;
-}
-
-.after\:rotate-45::after {
-  content: var(--tw-content);
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.after\:border-b::after {
-  content: var(--tw-content);
-  border-bottom-width: 1px;
-}
-
-.after\:border-\[\#2d2f31\]::after {
-  content: var(--tw-content);
-  --tw-border-opacity: 1;
-  border-color: rgb(45 47 49 / var(--tw-border-opacity));
-}
-
-.after\:bg-primary::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(45 46 49 / var(--tw-bg-opacity));
+  background-color: rgb(28 29 31 / var(--tw-bg-opacity));
 }
 
 .hover\:cursor-not-allowed:hover {
@@ -1052,14 +1045,14 @@ h6 {
   background-color: rgb(62 65 67 / var(--tw-bg-opacity));
 }
 
-.hover\:text-\[\#a7aada\]:hover {
+.hover\:text-\[\#a1a5d2\]:hover {
   --tw-text-opacity: 1;
-  color: rgb(167 170 218 / var(--tw-text-opacity));
+  color: rgb(161 165 210 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(45 46 49 / var(--tw-text-opacity));
+  color: rgb(28 29 31 / var(--tw-text-opacity));
 }
 
 .hover\:text-udemy:hover {
@@ -1072,9 +1065,8 @@ h6 {
   color: rgb(64 27 156 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\#a1a5d2\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(161 165 210 / var(--tw-text-opacity));
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .group:hover .group-hover\:text-udemy {

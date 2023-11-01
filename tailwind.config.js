@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         'primary': {
           'light': '#3e4143',
-          DEFAULT: '#2d2e31'
+          DEFAULT: '#1c1d1f'
         },
         'udemy': {
           'light': '#a436f0',
