@@ -416,7 +416,7 @@
             </div>
 
             <div x-show="menuNotificacionesTabs === 1" class="divide-y divide-gray-300">
-                <div class="flex gap-4">
+                <div>
                     <a href="#" class="flex gap-3 p-4">
                         <img src="/assets/images/header/notificaciones/logo-notificacion.jpg" alt=""
                              class="h-16 w-16 border border-gray-300 rounded-full"
@@ -431,7 +431,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex gap-4">
+                <div>
                     <a href="#" class="flex gap-3 p-4">
                         <img src="/assets/images/header/notificaciones/logo-notificacion.jpg" alt=""
                              class="h-16 w-16 border border-gray-300 rounded-full"
@@ -446,7 +446,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex gap-4">
+                <div>
                     <a href="#" class="flex gap-3 p-4">
                         <img src="/assets/images/header/notificaciones/logo-notificacion.jpg" alt=""
                              class="h-16 w-16 border border-gray-300 rounded-full"
@@ -463,7 +463,7 @@
                 </div>
 
                 <div class="flex items-center justify-between p-4">
-                    <div class="hover:cursor-not-allowed font-semibold text-base text-udemy opacity-50">
+                    <div class="text-udemy font-semibold opacity-50 text-base text-center hover:cursor-not-allowed">
                         Marcar todo como leído
                     </div>
 
