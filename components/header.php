@@ -383,10 +383,100 @@
         </div>
     </div>
 
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 hover:text-udemy">
+    <div x-data="{ menuNotificaciones: false }" class="relative" @click.away="menuNotificaciones = false">
+        <svg @mouseover="menuNotificaciones = true" @click="menuNotificaciones = ! menuNotificaciones"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 hover:text-udemy hover:cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
         </svg>
+
+        <div
+                x-show="menuNotificaciones"
+                x-data="{ menuNotificacionesTabs: 1 }"
+                class="absolute mt-8 right-0 w-[360px] border border-gray-300"
+        >
+            <div class="p-4 flex justify-between items-center">
+                <div class="text-lg font-semibold">Notificaciones</div>
+                <div class="text-udemy hover:text-udemy-dark font-semibold hover:cursor-pointer">Configuración</div>
+            </div>
+
+            <div class="grid grid-cols-2 text-center">
+                <div class="p-2 font-medium hover:cursor-pointer"
+                    @click="menuNotificacionesTabs = 1"
+                     :class=" menuNotificacionesTabs === 1 ? 'border-b-2 border-primary' : 'text-gray-600 hover:text-primary border-b border-gray-300'"
+                >
+                    Instructor
+                </div>
+
+                <div class="p-2 font-medium hover:cursor-pointer"
+                     @click="menuNotificacionesTabs = 2"
+                     :class=" menuNotificacionesTabs === 2 ? 'border-b-2 border-primary' : 'text-gray-600 hover:text-primary border-b border-gray-300'"
+                >
+                    Estudiantes
+                </div>
+            </div>
+
+            <div x-show="menuNotificacionesTabs === 1" class="divide-y divide-gray-300">
+                <div class="flex gap-4">
+                    <a href="#" class="flex gap-3 p-4">
+                        <img src="/assets/images/header/notificaciones/logo-notificacion.jpg" alt=""
+                             class="h-16 w-16 border border-gray-300 rounded-full"
+                        >
+                        <div>
+                            <p class="font-semibold leading-tight line-clamp-2">
+                                Ya se han eliminado las clases que solicitaste que se eliminaran.
+                            </p>
+                            <p class="my-1 text-gray-500">
+                                Hace 1 día
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="flex gap-3 p-4">
+                        <img src="/assets/images/header/notificaciones/logo-notificacion.jpg" alt=""
+                             class="h-16 w-16 border border-gray-300 rounded-full"
+                        >
+                        <div>
+                            <p class="font-semibold leading-tight line-clamp-2">
+                                Se han creado subtítulos automáticos para tu curso, Instala WordPress en tu ordenador con Local
+                            </p>
+                            <p class="my-1 text-gray-500">
+                                Hace 6 días
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="flex gap-3 p-4">
+                        <img src="/assets/images/header/notificaciones/logo-notificacion.jpg" alt=""
+                             class="h-16 w-16 border border-gray-300 rounded-full"
+                        >
+                        <div>
+                            <p class="font-semibold leading-tight line-clamp-2">
+                                Se han creado subtítulos automáticos para tu curso, Aprende las bases de AlpineJS con ejemplos
+                            </p>
+                            <p class="my-1 text-gray-500">
+                                Hace 9 días
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-between p-4">
+                    <div class="hover:cursor-not-allowed font-semibold text-base text-udemy opacity-50">
+                        Marcar todo como leído
+                    </div>
+
+                    <a href="#" class="py-3 px-6 border border-primary text-base font-semibold hover:bg-gray-200">
+                        Ver todo
+                    </a>
+                </div>
+            </div>
+
+            <div x-show="menuNotificacionesTabs === 2" class="p-4 text-base text-center text-gray-500">
+                Sin notificaciones.
+            </div>
+        </div>
     </div>
 
     <div>

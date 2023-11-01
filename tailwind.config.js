@@ -11,6 +11,7 @@ module.exports = {
         'udemy': {
           'light': '#a436f0',
           DEFAULT: '#5624d0',
+          'dark': '#401b9c'
         },
         'accent': '#eceb98',
       },
