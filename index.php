@@ -20,5 +20,6 @@
 <body>
 
 <?php require 'components/header.php'; ?>
+<?php require 'components/home/menu-categorias.php'; ?>
 </body>
 </html>
