@@ -1,4 +1,4 @@
-<div class="relative container mb-10 p-20 pb-32 z-10">
+<div class="relative container mb-12 p-20 pb-32 z-10">
     <img src="/assets/images/destacado.jpg" alt="Foto destacada" class="absolute h-full w-full top-0 left-0 z-0">
 
     <div class="relative max-w-[450px] p-6 bg-white shadow-lg z-10  ">
