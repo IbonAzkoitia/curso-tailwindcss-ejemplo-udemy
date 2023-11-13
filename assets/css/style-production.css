@@ -580,8 +580,8 @@ video {
   right: -0.75rem;
 }
 
-.-right-\[370px\] {
-  right: -370px;
+.-right-\[365px\] {
+  right: -365px;
 }
 
 .-top-3 {
@@ -602,14 +602,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.-right-\[360px\] {
-  right: -360px;
-}
-
-.-right-\[365px\] {
-  right: -365px;
 }
 
 .z-0 {
@@ -1263,6 +1255,27 @@ h6 {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.cursosTabs {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.cursosTabs:hover {
+  cursor: pointer;
+  --tw-text-opacity: 1;
+  color: rgb(28 29 31 / var(--tw-text-opacity));
+}
+
+.cursosTabsActive {
+  --tw-text-opacity: 1;
+  color: rgb(28 29 31 / var(--tw-text-opacity));
 }
 
 .hover\:cursor-not-allowed:hover {
