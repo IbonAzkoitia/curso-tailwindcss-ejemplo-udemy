@@ -1028,6 +1028,11 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 235 152 / var(--tw-bg-opacity));
+}
+
 .fill-\[\#b4690e\] {
   fill: #b4690e;
 }
@@ -1252,6 +1257,11 @@ video {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(28 29 31 / var(--tw-text-opacity));
+}
+
+.text-\[\#3d3d0a\] {
+  --tw-text-opacity: 1;
+  color: rgb(61 61 10 / var(--tw-text-opacity));
 }
 
 .line-through {
