@@ -24,6 +24,7 @@
 <?php require 'components/home/destacado.php'; ?>
 <?php require 'components/home/empresas.php'; ?>
 <?php require 'components/home/cursos.php'; ?>
+<?php require 'components/home/banner.php'; ?>
 <?php require 'components/footer.php'; ?>
 </body>
 </html>
