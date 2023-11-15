@@ -27,6 +27,7 @@
 <?php require 'components/home/banner.php'; ?>
 <?php require 'components/home/cursos-destacados.php'; ?>
 <?php require 'components/home/categorias.php'; ?>
+<?php require 'components/home/temas-destacados.php'; ?>
 <?php require 'components/footer.php'; ?>
 </body>
 </html>
