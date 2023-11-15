@@ -1,5 +1,3 @@
-<div class="h-[800px]"></div>
-
 <footer class="py-8 px-12 bg-[#1c1d1f] text-white text-sm">
 	<div class="mb-16 flex justify-between">
 		<div class="grid grid-cols-3 gap-20">
