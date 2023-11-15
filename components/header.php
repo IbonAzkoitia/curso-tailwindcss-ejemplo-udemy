@@ -1,6 +1,7 @@
 <header class="py-3 px-6 flex items-center flex-wrap gap-6 text-sm">
     <img src="/assets/images/logo-udemy.svg" alt="Logo de Udemy" class="h-8">
 
+    <!-- Menu Categorias -->
     <div x-data="{
             menuCategorias: false,
             menuCategoriasDesarrollo: false,
@@ -12,8 +13,8 @@
         <div class="hover:text-udemy hover:cursor-pointer" @click="menuCategorias = ! menuCategorias">Categorias</div>
 
 
-        <div x-show="menuCategorias" class="absolute mt-8 grid grid-cols-3 min-h-[300px]">
-            <div x-show="menuCategorias" class="w-[240px] border border-gray-300">
+        <div x-show="menuCategorias" @click.outside="menuCategorias = false" class="absolute mt-8 grid grid-cols-3 min-h-[300px] z-40">
+            <div x-show="menuCategorias" class="w-[240px] border border-gray-300 bg-white">
                 <ul>
                     <li @click="menuCategoriasDesarrollo = ! menuCategoriasDesarrollo" @click.away="menuCategoriasDesarrollo = false"
                         class="p-4 flex items-center justify-between hover:cursor-pointer hover:text-udemy"
@@ -112,7 +113,7 @@
                 </ul>
             </div>
 
-            <div x-show="menuCategoriasDesarrollo" class="border border-l-0 border-gray-300">
+            <div x-show="menuCategoriasDesarrollo" class="border border-l-0 border-gray-300 bg-white">
                 <ul>
                     <li @mouseover="menuCategoriasDesarrolloDesarrolloWeb = true"
                         @mouseout="menuCategoriasDesarrolloDesarrolloWeb = false"
@@ -126,7 +127,7 @@
                 </ul>
             </div>
 
-            <div x-show="menuCategoriasNegocios" class="border border-l-0 border-gray-300">
+            <div x-show="menuCategoriasNegocios" class="border border-l-0 border-gray-300 bg-white">
                 <ul>
                     <li class="p-4 hover:cursor-pointer hover:text-udemy">Comunicación</li>
                     <li class="px-4 py-1 hover:cursor-pointer hover:text-udemy">Emprendimiento</li>
@@ -134,15 +135,15 @@
                 </ul>
             </div>
 
-            <div x-show="menuCategoriasFinanzas" class="p-4">
-                <ul class="space-y-4">
-                    <li>Contabilidad</li>
-                    <li>Cumplimiento</li>
-                    <li>Criptomonedas</li>
+            <div x-show="menuCategoriasFinanzas" class="border border-l-0 border-gray-300 bg-white">
+                <ul>
+                    <li class="p-4 hover:cursor-pointer hover:text-udemy">Contabilidad</li>
+                    <li class="px-4 py-1 hover:cursor-pointer hover:text-udemy">Cumplimiento</li>
+                    <li class="p-4 hover:cursor-pointer hover:text-udemy">Criptomonedas</li>
                 </ul>
             </div>
 
-            <div x-show="menuCategoriasDesarrolloDesarrolloWeb" class="p-4 border border-l-0 border-gray-300">
+            <div x-show="menuCategoriasDesarrolloDesarrolloWeb" class="p-4 border border-l-0 border-gray-300 bg-white">
                 <ul class="space-y-4">
                     <li class="font-medium">Temas populares</li>
                     <li>JavaScript</li>
@@ -151,7 +152,7 @@
                 </ul>
             </div>
 
-            <div x-show="menuCategoriasDesarrolloCiencias" class="p-4 border border-l-0 border-gray-300">
+            <div x-show="menuCategoriasDesarrolloCiencias" class="p-4 border border-l-0 border-gray-300 bg-white">
                 <ul class="space-y-4">
                     <li class="font-medium">Temas populares</li>
                     <li>Python</li>
@@ -162,7 +163,9 @@
         </div>
 
     </div>
+    <!-- end Menu Categorias -->
 
+    <!-- Buscador -->
     <div class="grow p-3 flex items-center gap-4 border border-primary rounded-full bg-gray-50 text-gray-500">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -172,27 +175,33 @@
             Buscar cualquier cosa
         </div>
     </div>
+    <!-- end Menu Buscador -->
 
+    <!-- Menu Udemy Business -->
     <div x-data="{ menuUdemyBusiness: false }" class="relative" @click.away="menuUdemyBusiness = false">
         <div @mouseover="menuUdemyBusiness = true" @click="menuUdemyBusiness = ! menuUdemyBusiness" class="hover:text-udemy hover:cursor-pointer">Udemy Business</div>
 
-        <div x-show="menuUdemyBusiness" class="absolute mt-8 right-0 w-[300px] border border-gray-300 p-4 text-center">
+        <div x-show="menuUdemyBusiness" class="absolute mt-8 right-0 w-[300px] border border-gray-300 p-4 text-center z-40 bg-white">
             <div class="text-xl font-semibold">Dale a tu equipo acceso a más de 24.000 de los mejores cursos de Udemy en cualquier momento y lugar.</div>
 
             <a href="#" class="block mt-4 p-4 bg-primary hover:bg-primary-light text-white text-lg">Prueba Udemy Business</a>
         </div>
     </div>
+    <!-- end Menu Udemy Business -->
 
+    <!-- Menu Instructor  -->
     <div>
         <a href="#" class="hover:text-udemy">Instructor</a>
     </div>
+    <!-- end Menu Instructor -->
 
+    <!-- Menu Mi Aprendizaje -->
     <div x-data="{ menuMiAprendizaje: false }" class="relative" @click.away="menuMiAprendizaje = false">
         <div @mouseover="menuMiAprendizaje = true" @click="menuMiAprendizaje = ! menuMiAprendizaje" class="hover:text-udemy hover:cursor-pointer">
             Mi aprendizaje
         </div>
 
-        <div x-show="menuMiAprendizaje" class="absolute mt-8 right-0 w-[300px] border border-gray-300 divide-y divide-gray-300">
+        <div x-show="menuMiAprendizaje" class="absolute mt-8 right-0 w-[300px] border border-gray-300 divide-y divide-gray-300 z-40 bg-white">
 
             <div>
                 <a href="#" class="flex gap-3 p-4">
@@ -261,14 +270,16 @@
             </div>
         </div>
     </div>
+    <!-- end Menu Mi Aprendizaje -->
 
+    <!-- Menu Lista de Deseos -->
     <div x-data="{ menuWishlist: false }" class="relative" @click.away="menuWishlist = false">
         <svg @mouseover="menuWishlist = true" @click="menuWishlist = ! menuWishlist"
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 hover:text-udemy hover:cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
         </svg>
 
-        <div x-show="menuWishlist" class="absolute mt-8 right-0 w-[300px] border border-gray-300 divide-y divide-gray-300">
+        <div x-show="menuWishlist" class="absolute mt-8 right-0 w-[300px] border border-gray-300 divide-y divide-gray-300 z-40 bg-white">
 
             <div>
                 <a href="#" class="flex gap-3 p-4 pb-2">
@@ -320,7 +331,9 @@
             </div>
         </div>
     </div>
+    <!-- end Menu Lista de Deseos -->
 
+    <!-- Menu Carrito -->
     <div x-data="{ menuCart: false }" class="relative" @click.away="menuCart = false">
         <div class="relative">
             <svg @mouseover="menuCart = true" @click="menuCart = ! menuCart"
@@ -335,7 +348,7 @@
             </div>
         </div>
 
-        <div x-show="menuCart" class="absolute mt-8 right-0 w-[300px] border border-gray-300 divide-y divide-gray-300">
+        <div x-show="menuCart" class="absolute mt-8 right-0 w-[300px] border border-gray-300 divide-y divide-gray-300 z-40 bg-white">
 
             <div>
                 <a href="#" class="flex gap-3 p-4 pb-2">
@@ -382,7 +395,9 @@
             </div>
         </div>
     </div>
+    <!-- end Menu Carrito -->
 
+    <!-- Menu Notificaciones -->
     <div x-data="{ menuNotificaciones: false }" class="relative" @click.away="menuNotificaciones = false">
         <svg @mouseover="menuNotificaciones = true" @click="menuNotificaciones = ! menuNotificaciones"
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 hover:text-udemy hover:cursor-pointer">
@@ -392,7 +407,7 @@
         <div
                 x-show="menuNotificaciones"
                 x-data="{ menuNotificacionesTabs: 1 }"
-                class="absolute mt-8 right-0 w-[360px] border border-gray-300"
+                class="absolute mt-8 right-0 w-[360px] border border-gray-300 z-40 bg-white"
         >
             <div class="p-4 flex justify-between items-center">
                 <div class="text-lg font-semibold">Notificaciones</div>
@@ -478,13 +493,15 @@
             </div>
         </div>
     </div>
+    <!-- end Menu Notificaciones -->
 
+    <!-- Menu Usuario -->
     <div x-data="{ menuUsuario: false }" class="relative" @click.away="menuUsuario = false">
         <img @mouseover="menuUsuario = true" @click="menuUsuario = ! menuUsuario"
             src="/assets/images/ibon-azkoitia.jpg" alt="Usuario" class="h-8 rounded-full border border-gray-300"
         >
 
-        <div x-show="menuUsuario" class="absolute mt-8 right-0 w-[260px] border border-gray-300 divide-y divide-gray-300">
+        <div x-show="menuUsuario" class="absolute mt-8 right-0 w-[260px] border border-gray-300 divide-y divide-gray-300 z-40 bg-white">
 
             <div class="p-4 flex items-center gap-2">
                 <img src="/assets/images/ibon-azkoitia.jpg" alt="Usuario" class="h-16 rounded-full border border-gray-300">
@@ -590,4 +607,5 @@
             </a>
         </div>
     </div>
+    <!-- end Menu Usuario -->
 </header>
