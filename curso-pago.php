@@ -28,6 +28,7 @@
 <div class="max-w-6xl mx-auto">
     <div class="py-8 max-w-2xl">
         <?php require 'components/curso-pago/aprenderas.php'; ?>
+        <?php require 'components/curso-pago/contenido-curso.php'; ?>
     </div>
 </div>
 
