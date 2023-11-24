@@ -28,6 +28,8 @@
 <?php require 'components/curso-gratuito/tabs.php'; ?>
 <?php require 'components/curso-gratuito/precios.php'; ?>
 <?php require 'components/curso-gratuito/otros-cursos.php'; ?>
+<?php require 'components/curso-gratuito/otros-cursos-autor.php'; ?>
+<?php require 'components/curso-gratuito/banner.php'; ?>
 
 <div class="h-[900px]"></div>
 
