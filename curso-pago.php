@@ -29,6 +29,7 @@
     <div class="py-8 max-w-2xl">
         <?php require 'components/curso-pago/aprenderas.php'; ?>
         <?php require 'components/curso-pago/contenido-curso.php'; ?>
+        <?php require 'components/curso-pago/requisitos-descripcion.php'; ?>
     </div>
 </div>
 
