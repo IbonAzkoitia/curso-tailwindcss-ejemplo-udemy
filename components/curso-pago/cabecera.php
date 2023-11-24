@@ -1,6 +1,6 @@
 <div class="bg-[#2d2f31]">
     <div class="max-w-6xl mx-auto pt-8 pb-10 text-white ">
-        <div class="max-w-3xl">
+        <div class="max-w-2xl">
             <!-- Migas de Pan -->
             <div class="">
                 <div class="flex items-center gap-2 font-semibold text-sm text-[#c0c4fc]">

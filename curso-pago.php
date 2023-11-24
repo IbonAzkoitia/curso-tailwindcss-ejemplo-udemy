@@ -25,6 +25,12 @@
 <?php require 'components/header.php'; ?>
 <?php require 'components/curso-pago/cabecera.php'; ?>
 
+<div class="max-w-6xl mx-auto">
+    <div class="py-8 max-w-2xl">
+        <?php require 'components/curso-pago/aprenderas.php'; ?>
+    </div>
+</div>
+
 <div class="h-[900px]"></div>
 
 <?php require 'components/curso-gratuito/footer-udemy-business.php'; ?>
