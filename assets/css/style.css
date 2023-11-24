@@ -34,3 +34,10 @@ h6 {
 .cursosTabsActive {
     @apply text-primary
 }
+
+.cursosGratuitosTabs {
+    @apply pb-2 px-1 text-gray-500 hover:text-primary hover:cursor-pointer font-semibold border-b-2 border-transparent;
+}
+.cursosGratuitosTabsActive {
+    @apply border-primary text-primary;
+}

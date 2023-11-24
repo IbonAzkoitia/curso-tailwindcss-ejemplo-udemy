@@ -1,6 +1,6 @@
 <div class="shadow-lg -mt-3 h-3"></div>
 
-<div class="p-6">
+<div class="py-4 px-6">
     <div class="flex items-center gap-2 text-udemy font-semibold text-sm">
         <a href="#" class="hover:text-udemy-dark">
             Desarrollo
