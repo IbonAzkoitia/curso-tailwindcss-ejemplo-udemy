@@ -35,6 +35,7 @@
         <div class="mt-8">
             <?php require 'components/instructor.php'; ?>
         </div>
+        <?php require 'components/curso-pago/valoraciones.php'; ?>
     </div>
 </div>
 

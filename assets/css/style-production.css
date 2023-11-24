@@ -680,6 +680,18 @@ video {
   top: -32px;
 }
 
+.right-\[30px\] {
+  right: 30px;
+}
+
+.right-\[10px\] {
+  right: 10px;
+}
+
+.-right-\[10px\] {
+  right: -10px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1085,6 +1097,10 @@ video {
   width: 5rem;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
 .min-w-\[16px\] {
   min-width: 16px;
 }
@@ -1278,6 +1294,19 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
