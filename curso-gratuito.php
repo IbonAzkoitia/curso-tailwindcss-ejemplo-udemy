@@ -31,8 +31,7 @@
 <?php require 'components/curso-gratuito/otros-cursos-autor.php'; ?>
 <?php require 'components/curso-gratuito/banner.php'; ?>
 
-<div class="h-[900px]"></div>
-
+<?php require 'components/curso-gratuito/footer-udemy-business.php'; ?>
 <?php require 'components/footer.php'; ?>
 </body>
 </html>

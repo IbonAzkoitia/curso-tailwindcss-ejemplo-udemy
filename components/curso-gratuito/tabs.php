@@ -46,7 +46,7 @@ $seccion1 = [
 ];
 ?>
 
-<div class="my-12 container" x-data="{ activeTab: 3 }">
+<div class="my-12 container" x-data="{ activeTab: 0 }">
     <div class="flex items-center gap-4 border-b border-gray-300">
         <?php foreach ( $tabs as $index => $tab ) : ?>
         <div @click="activeTab = <?php echo $index; ?>"
