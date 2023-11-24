@@ -30,6 +30,7 @@
         <?php require 'components/curso-pago/aprenderas.php'; ?>
         <?php require 'components/curso-pago/contenido-curso.php'; ?>
         <?php require 'components/curso-pago/requisitos-descripcion.php'; ?>
+        <?php require 'components/curso-pago/otros-cursos.php'; ?>
     </div>
 </div>
 
