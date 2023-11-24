@@ -31,6 +31,10 @@
         <?php require 'components/curso-pago/contenido-curso.php'; ?>
         <?php require 'components/curso-pago/requisitos-descripcion.php'; ?>
         <?php require 'components/curso-pago/otros-cursos.php'; ?>
+        <?php require 'components/curso-pago/bundle.php'; ?>
+        <div class="mt-8">
+            <?php require 'components/instructor.php'; ?>
+        </div>
     </div>
 </div>
 
