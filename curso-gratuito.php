@@ -27,6 +27,7 @@
 <?php require 'components/curso-gratuito/cabecera.php'; ?>
 <?php require 'components/curso-gratuito/tabs.php'; ?>
 <?php require 'components/curso-gratuito/precios.php'; ?>
+<?php require 'components/curso-gratuito/otros-cursos.php'; ?>
 
 <div class="h-[900px]"></div>
 
