@@ -26,7 +26,7 @@
 <?php require 'components/curso-pago/cabecera.php'; ?>
 
 <div class="max-w-6xl mx-auto">
-    <div class="py-8 max-w-2xl">
+    <div class="pt-8 pb-12 max-w-2xl">
         <?php require 'components/curso-pago/aprenderas.php'; ?>
         <?php require 'components/curso-pago/contenido-curso.php'; ?>
         <?php require 'components/curso-pago/requisitos-descripcion.php'; ?>
@@ -36,10 +36,9 @@
             <?php require 'components/instructor.php'; ?>
         </div>
         <?php require 'components/curso-pago/valoraciones.php'; ?>
+        <?php require 'components/curso-pago/otros-cursos-autor.php'; ?>
     </div>
 </div>
-
-<div class="h-[900px]"></div>
 
 <?php require 'components/curso-gratuito/footer-udemy-business.php'; ?>
 <?php require 'components/footer.php'; ?>
