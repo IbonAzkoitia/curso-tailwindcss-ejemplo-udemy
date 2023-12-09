@@ -568,8 +568,16 @@ video {
   }
 }
 
+.\!static {
+  position: static !important;
+}
+
 .fixed {
   position: fixed;
+}
+
+.\!fixed {
+  position: fixed !important;
 }
 
 .absolute {
@@ -578,6 +586,10 @@ video {
 
 .relative {
   position: relative;
+}
+
+.\!sticky {
+  position: sticky !important;
 }
 
 .inset-0 {
@@ -638,6 +650,30 @@ video {
 
 .top-8 {
   top: 2rem;
+}
+
+.right-\[300px\] {
+  right: 300px;
+}
+
+.right-\[200px\] {
+  right: 200px;
+}
+
+.right-\[280px\] {
+  right: 280px;
+}
+
+.right-\[3200px\] {
+  right: 3200px;
+}
+
+.right-\[320px\] {
+  right: 320px;
+}
+
+.right-\[295px\] {
+  right: 295px;
 }
 
 .z-0 {
@@ -1853,6 +1889,10 @@ video {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-lg {
